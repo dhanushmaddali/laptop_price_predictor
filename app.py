@@ -5,8 +5,8 @@ import numpy as np
 # SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True 
 
 # import the model
-pipe = pickle.load(open('/Users/maddali/Downloads/laptop_price_project_24dec/pipe.pkl', 'rb'))
-df = pickle.load(open('/Users/maddali/Downloads/laptop_price_project_24dec/df.pkl', 'rb'))
+pipe = pickle.load(open('./pipe.pkl', 'rb'))
+df = pickle.load(open('./df.pkl', 'rb'))
 
 st.title("Laptop Predictor")
 
