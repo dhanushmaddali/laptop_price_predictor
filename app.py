@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True 
+# SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True 
 
 # import the model
 pipe = pickle.load(open('/Users/maddali/Downloads/laptop_price_project_24dec/pipe.pkl', 'rb'))
