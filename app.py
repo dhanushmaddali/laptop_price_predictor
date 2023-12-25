@@ -8,7 +8,7 @@ import numpy as np
 pipe = pickle.load(open('pipe.pkl', 'rb'))
 df = pickle.load(open('df.pkl', 'rb'))
 
-st.title("Laptop Predictor")
+st.title("Laptop Price Predictor App")
 
 # brands
 company = st.selectbox('Brand', df['Company'].unique())
@@ -64,4 +64,6 @@ if st.button('Predict Price'):
     query = np.array([company, type, ram, weight, touchscreen, ips, ppi, cpu, hdd, ssd, gpu, os])
 
     query = query.reshape(1, 12)
-    st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
+    st.title("The predicted price the laptop with the configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
+
+    st.title("Developed by Dhanush Maddali")
