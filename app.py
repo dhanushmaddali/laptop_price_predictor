@@ -5,12 +5,12 @@ import numpy as np
 # SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True 
 
 # import the model
-pipe = pickle.load(open('./pipe.pkl', 'rb'))
-df = pickle.load(open('./df.pkl', 'rb'))
+pipe = pickle.load(open('pipe.pkl', 'rb'))
+df = pickle.load(open('df.pkl', 'rb'))
 
 st.title("Laptop Predictor")
 
-# brand
+# brands
 company = st.selectbox('Brand', df['Company'].unique())
 
 # type of laptop
