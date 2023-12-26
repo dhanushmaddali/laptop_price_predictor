@@ -45,7 +45,7 @@ gpu = st.selectbox('GPU', df['Gpu brand'].unique())
 
 os = st.selectbox('OS', df['os'].unique())
 
-if st.button('Predict Price'):
+if st.button('Proposed Price'):
     # query
     ppi = None
     if touchscreen == 'Yes':
